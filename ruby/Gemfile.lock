@@ -24,7 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  hubspot-api-client (>= 10.0.0)
+  hubspot-api-client (= 10.0.0)
   pry
 
 RUBY VERSION

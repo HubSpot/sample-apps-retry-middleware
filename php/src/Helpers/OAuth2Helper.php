@@ -51,7 +51,7 @@ class OAuth2Helper
 
         if (time() > $token['expires_at']) {
             $response = Factory::create()
-                ->auth()->oAuth()->defaultApi()->createToken(
+                ->auth()->oAuth()->tokensApi()->createToken(
                     'refresh_token',
                     null,
                     null,

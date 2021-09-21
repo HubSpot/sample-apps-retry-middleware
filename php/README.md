@@ -1,6 +1,6 @@
 # HubSpot PHP Retry Middleware Sample App
 
-This is a sample app for the [hubspot-php SDK](../../../../). Currently, this app focuses on demonstrating the retry middleware mechanism. It will be useful for you if you often reach rate limit (429 http error).
+Currently, this app focuses on demonstrating the retry middleware mechanism. It will be useful for you if you often reach rate limit (429 http error).
 
 Please see the documentation on [Creating an app in HubSpot](https://developers.hubspot.com/docs-beta/creating-an-app)
 
@@ -21,10 +21,6 @@ Make sure you have [Docker Compose](https://docs.docker.com/compose/) installed.
 
 1. Copy .env.template to .env
 2. Specify authorization data in .env:
-    
-    - Paste your HubSpot API Key as the value for HUBSPOT_API_KEY
-    
-    or
     
     - Paste HUBSPOT_CLIENT_ID and HUBSPOT_CLIENT_SECRET for OAuth
 

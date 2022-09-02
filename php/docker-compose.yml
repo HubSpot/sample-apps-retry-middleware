@@ -21,7 +21,7 @@ services:
         volumes:
             - ./src:/app/src
             - ./sql:/app/sql
-            - ./.php_cs:/app/.php_cs
+            - ./.php-cs-fixer.php:/app/.php-cs-fixer.php
     db:
         container_name: php-retry-middleware-app-db
         image: mysql:8.0

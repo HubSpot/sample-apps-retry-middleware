@@ -58,7 +58,8 @@ class OAuth2Helper
                     static::getClientId(),
                     static::getClientSecret(),
                     $token['refresh_token']
-                );
+                )
+            ;
 
             TokensRepository::save([
                 'refresh_token' => $response->getRefreshToken(),

@@ -2,8 +2,6 @@
 
 namespace Helpers;
 
-use PDO;
-
 class DBClientHelper
 {
     protected static $dbClient;
@@ -11,8 +9,8 @@ class DBClientHelper
     public static function getClient()
     {
         if (is_null(static::$dbClient)) {
-            $pdo = new PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD']);
-            $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+            $pdo = new \PDO('mysql:host='.$_ENV['DB_HOST'].';dbname='.$_ENV['DB_NAME'], $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD']);
+            $pdo->setAttribute(\PDO::ATTR_EMULATE_PREPARES, false);
             self::$dbClient = $pdo;
         }
 

@@ -11,6 +11,15 @@ checkEnvParam('PROCESS_COUNT');
 
 DBClientHelper::runMigrations();
 
+function checkOAuth()
+{
+    if (!OAuth2Helper::isAuthenticated()) {
+        echo 'In order to continue please go to http://localhost:8999 and authorize via OAuth.'.PHP_EOL;
+
+        exit;
+    }
+}
+
 if (!OAuth2Helper::isAuthenticated()) {
     echo 'In order to continue please go to http://localhost:8999 and authorize via OAuth.'.PHP_EOL;
     while (true) {
@@ -24,6 +33,7 @@ if (!OAuth2Helper::isAuthenticated()) {
 echo 'Start'.PHP_EOL;
 
 while (true) {
+    checkOAuth();
     // Pay attention on HubspotClientHelper.
     // It generates a custom client with reties middlewares and pass this client to HubSpot Factory.
     // Inside loop to avoid token expiration.

@@ -1,7 +1,7 @@
 {
     "minimum-stability": "stable",
     "require": {
-        "hubspot/api-client": "*",
+        "hubspot/api-client": "10.1.*",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-pdo": "*",

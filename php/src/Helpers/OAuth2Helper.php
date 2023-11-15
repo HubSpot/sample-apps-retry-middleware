@@ -64,6 +64,7 @@ class OAuth2Helper
                 'refresh_token' => $response->getRefreshToken(),
                 'access_token' => $response->getAccessToken(),
                 'expires_in' => $response->getExpiresIn(),
+                'expires_at' => static::getExpiresAt($response->getExpiresIn()),
             ]);
 
             return $response->getAccessToken();

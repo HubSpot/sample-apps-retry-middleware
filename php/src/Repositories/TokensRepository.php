@@ -4,7 +4,6 @@ namespace Repositories;
 
 use Helpers\DBClientHelper;
 use Helpers\OAuth2Helper;
-use PDO;
 
 class TokensRepository
 {
@@ -14,7 +13,7 @@ class TokensRepository
             ->query('select * from tokens order by id desc limit 1')
         ;
 
-        return $query->fetch(PDO::FETCH_ASSOC);
+        return $query->fetch(\PDO::FETCH_ASSOC);
     }
 
     public static function insert(array $token)

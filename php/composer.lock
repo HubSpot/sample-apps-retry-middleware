@@ -660,16 +660,16 @@
         },
         {
             "name": "hubspot/api-client",
-            "version": "10.1.0",
+            "version": "10.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/HubSpot/hubspot-api-php.git",
-                "reference": "529f3cf153fd272e8b4745e8569f41a2fe813a75"
+                "reference": "2eba8c28500657d8cc0c5920c9cb3d9ecb1b86a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/HubSpot/hubspot-api-php/zipball/529f3cf153fd272e8b4745e8569f41a2fe813a75",
-                "reference": "529f3cf153fd272e8b4745e8569f41a2fe813a75",
+                "url": "https://api.github.com/repos/HubSpot/hubspot-api-php/zipball/2eba8c28500657d8cc0c5920c9cb3d9ecb1b86a0",
+                "reference": "2eba8c28500657d8cc0c5920c9cb3d9ecb1b86a0",
                 "shasum": ""
             },
             "require": {
@@ -714,9 +714,9 @@
             ],
             "support": {
                 "issues": "https://github.com/HubSpot/hubspot-api-php/issues",
-                "source": "https://github.com/HubSpot/hubspot-api-php/tree/10.1.0"
+                "source": "https://github.com/HubSpot/hubspot-api-php/tree/10.1.2"
             },
-            "time": "2023-07-27T14:11:22+00:00"
+            "time": "2023-11-15T14:18:54+00:00"
         },
         {
             "name": "monolog/monolog",
